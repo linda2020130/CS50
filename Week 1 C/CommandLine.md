@@ -2,6 +2,19 @@
 
 These commands can be used on any UNIX-based operating system including Linux and Mac OS.
 
+### clang *file name*
+
+To compile the C languages source code into machine code.
+* `clang` stands for **C Languages**.
+* Type `clang hello.c` will generate a machine code file called `a.out`.
+* Or type `clang -o hello hello.c` where `-o hello` is telling the program `clang` to save the compiled output as `hello`.
+* Or use `make hello` where `make` use `clang` to compile our code from `hello.c` into `hello`.
+
+### ./MachineCodeFileName
+
+To run the machine code using `./` + name of machine code file.
+* Example: `./a.out` or `./hello`
+
 ### ls
 
 To **list** everything that exists in my current directory.
@@ -16,10 +29,10 @@ To **list** everything that exists in my current directory.
 ### cd *directory*
 
 Short for **change directory**, this command change your current directory to *directory*
-* shorthand name for the current directory is `.`
-* shorthand name for the parent directory of the current directory is `..`
+* Shorthand name for the current directory is `.`
+* Shorthand name for the parent directory of the current directory is `..`
 * `pwd` short for present working directory; this tells you where you are.
-* bring you back to the original place by just type in cd.
+* Bring you back to the original place by just type in cd.
 
 ![cd](https://github.com/linda2020130/Notes_CS50/blob/master/Pictures/cd.PNG)
 
