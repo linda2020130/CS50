@@ -8,6 +8,7 @@ depending on the input being passed in.
   * **Multiple base cases**: The *Fibonacci number sequence* is defined as a(n) = a(n-1) + a(n-2) where a(0)=0 and a(1)=1.
   * **Multiple recursive cases**: The *Collatz conjecture*. (See below) 
 
+<br />
 
 ### Example - Factorial Function
 
@@ -47,6 +48,8 @@ int fact2(int n)
     return product;
 }
 ```
+
+<br />
 
 ### Example - The Collatz Conjecture
 
