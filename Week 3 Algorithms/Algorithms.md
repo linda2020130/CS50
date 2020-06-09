@@ -2,8 +2,7 @@
 
 ### Linear Search
 
-The idea of the algorithm is to **iterate across the array from left to right**, 
-searching for a specified element.
+The idea of the algorithm is to **iterate across the array from left to right**, searching for a specified element.
 
 <br />
 
@@ -17,8 +16,7 @@ In **pseudocode**:
 
 ### Binary Search
 
-The idea of the algorithm is to divide and conquer, **reducing the search area by half each time**, 
-trying to find a target number.
+The idea of the algorithm is to divide and conquer, **reducing the search area by half each time**, trying to find a target number.
 * The array must first be **sorted**, else we cannot make assumptions about the array's contents.
 
 <br />
@@ -27,18 +25,15 @@ In **pseudocode**:
 * Repeat until the (sub)array is of size 0:
   * Calculate the *middle point* of the current (sub)array.
   * If the target is at the middle, stop.
-  * Otherwise, if the target is *less than what's at the middle*, repeat, 
-  changing the *end point* to just to the left of the middle.
-  * Otherwise, of the target is *greater than what's at the middle*, repeat, 
-  changing the *start point* to be just to the right of the middle.
+  * Otherwise, if the target is *less than what's at the middle*, repeat, changing the *end point* to just to the left of the middle.
+  * Otherwise, of the target is *greater than what's at the middle*, repeat, changing the *start point* to be just to the right of the middle.
 
 <br />
 <br />
 
 ### Bubble Sort
 
-The idea of the algorithm is to **move higher valued elements generally towards the right** and lower 
-value elements generally towards the left.
+The idea of the algorithm is to **move higher valued elements generally towards the right** and lower value elements generally towards the left.
 
 <br />
 
@@ -68,8 +63,7 @@ In **pseudocode**:
 
 ### Insertion Sort
 
-The idea of the algorithm is to **build your sorted array in place**, shifting elements out of the way if 
-necessary to make rooms as you go.
+The idea of the algorithm is to **build your sorted array in place**, shifting elements out of the way if necessary to make rooms as you go.
 
 <br />
 
@@ -80,5 +74,31 @@ In **pseuducode**:
 
 <br />
 <br />
+
+### Merge Sort
+
+The idea of the algorithm is to **sort smaller arrays** and then **combine those arrays together** in sorted order.
+* Merge sort leverages something called **recursion**.
+
+In **pseudocode**:
+* Sort the left half of the array (assuming n > 1).
+* Sort the right half of the array (assuming n > 1).
+* Merge the two halves sorted subarrays together.
+
+<br />
+<br />
+
+### Summary
+
+Algorithm   |Basic Concept   |O (Worst Case) |Ω (Best Case)
+:---|:---|:---|:---
+Selection Sort|Find the **smallest** unsorted element in an array and swap it with the **first** unsorted element of that array.|n^2 |n^2
+Bubble Sort|Swap **adjacent pairs** of the elements if they are out of order, effectively "bubbling" larger elements to the right and smaller ones to the left.|n^2 |n
+Insertion Sort|Proceed once through the array from left-to-right, **shifting** elements as necessary to insert each element into its correct place.|n^2 |n
+Merge Sort|**Split** the full array into subarrays, then **merge** those subarrays back together in the correct order.|nlogn |nlogn
+Linear Search|**Iterate** across the array from left-to-right, trying to find the target element.|n |1
+Binary Search|Given a ***sorted*** array, **divide and conquer** by systematically eliminating half of the remaining elements in the search for the target element.|logn |1
+
+
 
 
