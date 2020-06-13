@@ -1,3 +1,13 @@
+/*
+Implement a program that runs a runoff election.
+If no candidate has more than 50% of the vote, then an "instant runoff" occurs. The candidate who received 
+the fewest number of votes is eliminated from the election, and anymore who originally chose that candidate 
+as their first preference now has their second preference considered.
+The process repeats: if no candidate has a majority of the votes, the last place candidate is eliminated, 
+and anyone who voted for them will instead vote for their next preference (who hasn’t themselves already 
+been eliminated). Once a candidate has a majority, that candidate is declared the winner.
+*/
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
