@@ -5,6 +5,7 @@ Tries combine *structures and pointers* together to store data in an interesting
   * If you can follow the map from beginning to end, the data exists in the trie.
   * If you can't, it doesn't.
 * Unlike with a hash table, there are **no collisions**, and no two pieces of data (unless they are identical) have the same path.
+* The key has to be **unique**!
 
 
 <br />
@@ -14,6 +15,7 @@ Tries combine *structures and pointers* together to store data in an interesting
 Let's map key-value pairs where the keys are four-digit years (YYYY) and the values are names of universities founded during those years. 
 * In a trie, the paths from a central **root** node to a **leaf** node (where the school names would be), would be labeled with digits of the year.
 * Each node on the path from root to leaf could have 10 pointers emanating from it, one for each digit.
+* Assumd that no universities were founded in the same year so that the key is guaranteed unique.
 
 ```
 typedef struct _trie
