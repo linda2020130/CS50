@@ -9,7 +9,7 @@ A linked list **node** is a special kind of struct with *two members*:
 
 ### Illustration
 
-![linked_list]()
+![linked_list](https://github.com/linda2020130/Notes_CS50/blob/master/Pictures/linkedList.png)
 
 <br />
 
