@@ -5,8 +5,33 @@
   * **SQLite** is another, which we've actually use in CS50 since 2016.
 * Many installations of SQL come with a GUI tool called **phpMyAdmin** which can be used to execute database queries in a more user-friendly way.
 * Each column of your SQL table is capable of holding data of a particular data type.
-  * e.g. `INT`, `DECIMAL`, `FLOAT`, `DATE`, `CHAR`, `VARCHAR`, `TEXT`, ......
+* SQLite is one database application that supports SQL, and there are many companies with server applications that support SQL, includes Oracle Database, MySQL, PostgreSQL, MariaDB, and Microsoft Access.
 * SQL integrates with other programming languages such as Python or PHP very easily.
+* With `.schema`, we can see how the format for the table for our data is created.
+
+<br />
+
+### Data Types
+
+* `BLOB`: short for **binary large object**, raw binary data that might represent files.
+* `INTEGER`
+ * `smallint`
+ * `integer`
+ * `bigint`
+* `NUMERIC`
+ * `boolean`
+ * `date`
+ * `datetime`
+ * `numeric(scale, precision)`: which solves floating-point imprecision by using as many bits as needed, for each digit before and after the decimal point.
+ * `time`
+ * `timestamp`
+* `REAL`
+ * `real`: for floating-point values
+ * `double precision`: with more bits
+* `TEXT`
+ * `char(n)`: for an exact number of characters
+ * `varchar(n)`: for a variable number of characters, up to a certain limit
+ * `text`
  
 <br />
 
@@ -48,6 +73,14 @@
 3. **UPDATE**
 4. **DELETE**
 
+* There are also other operations we can combine as needed:
+ * `WHERE`: matching on some strict condition
+ * `LIKE`: matching on substrings for text
+ * `LIMIT`
+ * `GROUP BY`
+ * `ORDER BY`
+ * `JOIN`: combining data from multiple tables
+
 #### INSERT
 
 * Add information to a table.
@@ -67,6 +100,14 @@ users
 VALUES
 ('newman', 'USMAIL', 'Newman')
 ```
+
+* After inserting values, we can use functions to perform calculations.
+ * `AVG`
+ * `COUNT`
+ * `DISTINCT`: for getting distinct values without duplicates
+ * `MAX`
+ * `MIN`
+ ...
 
 #### SELECT
 
@@ -138,6 +179,16 @@ WHERE
 idnum = 10
 ```
 
+e.g.
+```
+UPDATE
+favorites
+SET
+title = 'The office'
+WHERE
+title LIKE '%office'
+```
+
 #### DELETE
 
 * Remove information from a table
@@ -155,3 +206,5 @@ users
 WHERE
 username = 'newman'
 ```
+
+* We can even delete an entire table altogether with another command, `DROP`.
