@@ -74,12 +74,12 @@
 4. **DELETE**
 
 * There are also other operations we can combine as needed:
- * `WHERE`: matching on some strict condition
- * `LIKE`: matching on substrings for text
- * `LIMIT`
- * `GROUP BY`
- * `ORDER BY`
- * `JOIN`: combining data from multiple tables
+  * `WHERE`: matching on some strict condition
+  * `LIKE`: matching on substrings for text
+  * `LIMIT`
+  * `GROUP BY`
+  * `ORDER BY`
+  * `JOIN`: combining data from multiple tables
 
 #### INSERT
 
@@ -107,7 +107,6 @@ VALUES
  * `DISTINCT`: for getting distinct values without duplicates
  * `MAX`
  * `MIN`
- ...
 
 #### SELECT
 
