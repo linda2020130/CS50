@@ -16,7 +16,8 @@ Online course website: [CS50](https://cs50.harvard.edu/x/2020/)(2020 version)
 
 <h2 id="intro">Introduction</h2>
 
-CS50 teaches students how to **think algorithmically** and **solve problems efficiently**. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, and software engineering. Languages include C, Python, and SQL plus students’ choice of: HTML, CSS, and JavaScript (for web development); Java or Swift (for mobile app development); or Lua (for game development). Problem sets inspired by the arts, humanities, social sciences, and sciences. <br>
+CS50 teaches students how to **think algorithmically** and **solve problems efficiently**. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, and software engineering. Languages include C, Python, and SQL plus students’ choice of: HTML, CSS, and JavaScript (for web development); Java or Swift (for mobile app development); or Lua (for game development). Problem sets inspired by the arts, humanities, social sciences, and sciences.
+<br>
 
 <h2 id="week1">Week 1 C</h2>
 
@@ -25,9 +26,9 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 2. **Problem Set 1**: 
     * [Hello](/Week%201%20C/hello.c): Return `hello, XXX` after user inputs the name.
     * [Mario](/Week%201%20C/mario.c): Return the **pyramids** using hashes (`#`) for bricks after user inputs how tall the pyramids should be. 
-      <details><summary>Constraints:</summary>
-         <p>If the user doesn’t input a positive integer between 1 and 8, inclusive, the program should re-prompt the user until they cooperate.</p>
-       </details>
+      <details><summary>Details:</summary>
+      <p>If the user doesn’t input a positive integer between 1 and 8, inclusive, the program should re-prompt the user until they cooperate.</p>
+      </details>
       <details><summary>Illustration:</summary>
       
       ```
@@ -44,7 +45,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       ```
       </details>
     * [Cash](/Week%201%20C/cash.c): Return the **minimum number of coins** that the user's input (how much change he/she owned) can be made.
-      <details><summary>Constraints:</summary>
+      <details><summary>Details:</summary>
    
       1. The only coins available are quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢).
       2. Only allow user to input float number(use `get_float`). The program should re-prompt the users until they cooperate.
@@ -62,7 +63,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       ```
       </details>
     * [Credit](/Week%201%20C/credit.c): Return `VISA`, `AMEX`, `MASTERCARD`, or `INVALID` after user inputs a credit card number.
-      <details><summary>Constraints:</summary>
+      <details><summary>Details:</summary>
    
       1. The program should re-prompt the users until they input entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card). 
       2. According to *Luhn’s algorithm*, you can determine if a credit card number is (syntactically) valid.
@@ -82,7 +83,6 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       INVALID
       ```
       </details>
-<br>
 
 <h2 id="week2">Week 2 Arrays</h2>
 
@@ -91,7 +91,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 2. [Variable Scope](/Week%202%20Arrays/VariableScope.md): Definitions and examples of *local variables* and *global variables*.
 3. **Problem Set 2**:
    * [Readability](/Week%202%20Arrays/readability.c): Return the approximate grade level after user input some text.
-      <details><summary>Constraints:</summary>
+      <details><summary>Details:</summary>
    
       1. Use the *Coleman-Liau index* (`index = 0.0588 * L - 0.296 * S - 15.8`) to compute the grade reading level. Here, L is the average number of letters per 100 words in the text, and S is the average number of sentences per 100 words in the text.
       2. Prompt the user for a `string` of text using `get_string`.
@@ -111,7 +111,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       ```
       </details>
    * [Caesar](/Week%202%20Arrays/caesar.c): Return encrypted messages using *Caesar's cipher*.
-      <details><summary>Constraints:</summary>
+      <details><summary>Details:</summary>
    
       1. Caesar’s algorithm (i.e., cipher) encrypts messages by “rotating” each letter by k positions. 
       2. Accept a single command-line argument, a non-negative integer k. Return `Usage: ./caesar key` if not receive exactly one command-line argument from user.
@@ -132,7 +132,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       ```
       </details>
    * [Substitution](/Week%202%20Arrays/substitution.c): Return a substitution cipher.
-      <details><summary>Constraints:</summary>
+      <details><summary>Details:</summary>
    
       1. Encrypt a message by replacing every letter with another letter using a 26-character mapping key.
       2. Accept a single command-line argument, a 26-character mapping key. Return `Usage: ./substitution key` if not receive exactly one command-line argument from user. Return `Key must contain 26 characters.` if not receive exactly 26 characters.
@@ -153,12 +153,119 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       Key must contain 26 characters.
       ```
       </details>
-<br>
 
 <h2 id="week3">Week 3 Algorithms</h2>
 
 [🐳](/Week%203%20Algorithms)
-<br>
+1. [Algorithms](/Week%203%20Algorithms/Algorithms.md): Includes `Linear Search`, `Binary Search`, `Bubble Sort`, `Selection Sort`, `Insertion Sort`, and `Merge Sort`.
+2. [Recursion](/Week%203%20Algorithms/Recursion.md): Definition and examples of recursion.
+3. **Problem Set 3**: 
+    * [Plurality](/Week%203%20Algorithms/plurality.c): Run a plurity election. Every voter gets one vote, and the candidate with the most votes wins.
+      <details><summary>Details:</summary>
+      
+      1. The maximum number of candidates an election can have is 9.
+      2. Sets a global variable `candidate_count` representing the number of candidates in the election, copies command-line arguments into the array `candidates`, and asks the user to type in the number of voters.
+      3. Every voter type in a vote, calling the `vote` function on each candidate voted for.
+      4. `main` makes a call to the `print_winner` function to print out the winner (or winners) of the election.
+      5. `vote` takes a single argument, a `string` called `name`, representing the name of the candidate who was voted for. Indicate an invalid ballot if not match any name.
+      6. May assume that no two candidates will have the same name.
+      </details>
+      <details><summary>Illustration:</summary>
+      
+      ```
+      $ ./plurality Alice Bob
+      Number of voters: 3
+      Vote: Alice
+      Vote: Charlie
+      Invalid vote.
+      Vote: Alice
+      Alice
+      $ ./plurality Alice Bob Charlie
+      Number of voters: 5
+      Vote: Alice
+      Vote: Charlie
+      Vote: Bob
+      Vote: Bob
+      Vote: Alice
+      Alice
+      Bob
+      ```
+      </details>
+    * [Runoff](/Week%203%20Algorithms/runoff.c): Run a runoff election, a ranked-choice voting system. Voters can rank the candidates in order of preference. 
+      <details><summary>Details:</summary>
+   
+      1. If no candidate has a majority of the votes, the last place candidate is eliminated, and anyone who voted for them will instead vote for their next preference. Once a candidate has a majority, that candidate is declared the winner.
+      2. All candidates who are tied for last place will be eliminated. Declare the election a tie if every remaining candidate has the exact same number of votes.
+      3. Assume that all voters will rank all of the candidates in their preferred order.
+      4. An election with any number of candidate (up to the MAX of 9).
+      5. Invalid votes for candidates who are not on the ballot.
+      6. Voting for a candidate by name and may assume that no two candidates will have the same name.
+      </details>
+      <details><summary>Illustration:</summary>
+      
+      ```
+      ./runoff Alice Bob Charlie
+      Number of voters: 5
+      Rank 1: Alice
+      Rank 2: Bob
+      Rank 3: Charlie
+
+      Rank 1: Alice
+      Rank 2: Charlie
+      Rank 3: Bob
+
+      Rank 1: Bob
+      Rank 2: Charlie
+      Rank 3: Alice
+
+      Rank 1: Bob
+      Rank 2: Alice
+      Rank 3: Charlie
+
+      Rank 1: Charlie
+      Rank 2: Alice
+      Rank 3: Bob
+
+      Alice
+      ```
+      </details>
+    * [Tideman](/Week%203%20Algorithms/tideman.c): Run a Tideman election, a ranked-choice voting system. Voters can rank the candidates in order of preference.
+      <details><summary>Details:</summary>
+      
+      1. The Tideman method works by constructing a “graph” of candidates, where an arrow (i.e. edge) from candidate A to candidate B indicates that candidate A wins against candidate B in a head-to-head matchup. The winner of the election should be the “source” of the graph
+      2. The Tideman algorithm specifies that matchup edges should be “locked in” to the graph one at a time, based on the “strength” of the victory (the more people who prefer a candidate over their opponent, the stronger the victory). So long as the edge can be locked into the graph without creating a cycle, the edge is added; otherwise, the edge is ignored.
+      3. An election with any number of candidate (up to the MAX of 9)
+      4. Invalid votes for candidates who are not on the ballot.
+      5. Voting for a candidate by name and may assume that no two candidates will have the same name.
+      </details>
+      <details><summary>Illustration:</summary>
+      
+      ```
+      ./tideman Alice Bob Charlie
+      Number of voters: 5
+      Rank 1: Alice
+      Rank 2: Charlie
+      Rank 3: Bob
+
+      Rank 1: Alice
+      Rank 2: Charlie
+      Rank 3: Bob
+
+      Rank 1: Bob
+      Rank 2: Charlie
+      Rank 3: Alice
+
+      Rank 1: Bob
+      Rank 2: Charlie
+      Rank 3: Alice
+
+      Rank 1: Charlie
+      Rank 2: Alice
+      Rank 3: Bob
+
+      Charlie
+      ```
+      </details>
 
 <h2 id="week4">Week 4 Memory</h2>
 
