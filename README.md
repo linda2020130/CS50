@@ -28,22 +28,30 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       * **Constraints**: None.
     * [Mario](/Week%201%20C/mario.c): 
       * **Output**: Return the **pyramids** using hashes (`#`) for bricks after user inputs how tall the pyramids should be. 
-      * **Constraints**: If the user doesn’t input a positive integer between 1 and 8, inclusive, the program should re-prompt the user until they cooperate.
+      * <details><summary>Constraints:</summary>
+         <p>If the user doesn’t input a positive integer between 1 and 8, inclusive, the program should re-prompt the user until they cooperate.</p>
+         </details>
       * **Illustration**:<br>![mario](/Pictures/mario.PNG)
     * [Cash](/Week%201%20C/cash.c):
       * **Output**: Return the **minimum number of coins** that the user's input (how much change he/she owned) can be made.
-      * **Constraints**: 
+      * <details><summary>Constraints:</summary>
+   
         1. The only coins available are quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢).
         2. Only allow user to input float number(use `get_float`). The program should re-prompt the users until they cooperate.
         3. Round your cents to the nearest penny, as with round, which is declared in `math.h`.
         4. Beware the inherent imprecision of floating-point values. Convert the user’s inputted dollars to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up!
+        </details>
+        
       * **Illustration**:<br>![cash](/Pictures/cash.PNG)
     * [Credit](/Week%201%20C/credit.c):
       * **Output**: Return `VISA`, `AMEX`, `MASTERCARD`, or `INVALID` after user inputs a credit card number.
-      * **Constraints**: 
+      * <details><summary>Constraints:</summary>
+   
         1. The program should re-prompt the users until they input entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card). 
         2. According to *Luhn’s algorithm*, you can determine if a credit card number is (syntactically) valid.
-        3. All American Express numbers start with 34 or 37; most MasterCard numbers start with 51, 52, 53, 54, or 55 (they also have some other potential starting numbers which we won’t concern ourselves with for this problem); and all Visa numbers start with 4. 
+        3. All American Express numbers start with 34 or 37; most MasterCard numbers start with 51, 52, 53, 54, or 55 (they also have some other potential starting numbers which we won’t concern ourselves with for this problem); and all Visa numbers start with 4.
+        
+        </details>
       * **Illustration**:<br>![credit](/Pictures/credit.PNG)
 <br>
 
