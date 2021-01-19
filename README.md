@@ -22,10 +22,9 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 
 [🐳](/Week%201%20C)
 1. [Using the Linux command line](/Week%201%20C/CommandLine.md): Common Linux CLI commands including `ls`, `cd`, `mkdir`, `cp`, `rm`, `mv` and how to compile the C languages source code into machine code.
-2. **Problem Set 1** : 
+2. **Problem Set 1**: 
     * [Hello](/Week%201%20C/hello.c): 
       * **Output**: Return `hello, XXX` after user inputs the name.
-      * **Constraints**: None.
     * [Mario](/Week%201%20C/mario.c): 
       * **Output**: Return the **pyramids** using hashes (`#`) for bricks after user inputs how tall the pyramids should be. 
       * <details><summary>Constraints:</summary>
@@ -58,6 +57,64 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 <h2 id="week2">Week 2 Arrays</h2>
 
 [🐳](/Week%202%20Arrays)
+1. [Arrays](/Week%202%20Arrays/Arrays.md): Important features of arrays and the way to declare an array in C. *Call by value vs. call by reference* are also covered.
+2. [Variable Scope](/Week%202%20Arrays/VariableScope.md): Definitions and examples of *local variables* and *global variables*.
+3. **Problem Set 2**:
+   * [Readability](/Week%202%20Arrays/readability.c):
+      * **Output**: Return the approximate grade level after user input some text.
+      * <details><summary>Constraints:</summary>
+   
+        1. Use the *Coleman-Liau index* (`index = 0.0588 * L - 0.296 * S - 15.8`) to compute the grade reading level. Here, L is the average number of letters per 100 words in the text, and S is the average number of sentences per 100 words in the text.
+        2. Prompt the user for a `string` of text using `get_string`.
+        3. You may assume that a letter is any lowercase character from a to z or any uppercase character from A to Z, any sequence of characters separated by spaces should count as a word, and that any occurrence of a period, exclamation point, or question mark indicates the end of a sentence.
+        4. If the resulting index number is 16 or higher, your program should output `Grade 16+`. If the index number is less than 1, your program should output `Before Grade 1`.
+        
+        </details>
+      * **Illustration**:<br>![readability](/Pictures/readability.PNG)
+   * [Caesar](/Week%202%20Arrays/caesar.c):
+      * **Output**: Return encrypted messages using *Caesar's cipher*.
+      * <details><summary>Constraints:</summary>
+   
+        1. Caesar’s algorithm (i.e., cipher) encrypts messages by “rotating” each letter by k positions. 
+        2. Accept a single command-line argument, a non-negative integer k. Return `Usage: ./caesar key` if not receive exactly one command-line argument from user.
+        3. Work for all non-negative integral values of k less than 2^31 - 26.
+        4. Output `plaintext:` and then prompt the user for a string of plaintext (using `get_string`).
+        5. Output `ciphertext:` followed by the plaintext’s corresponding ciphertext, with each alphabetical character in the plaintext “rotated” by k positions.
+        6. Non-alphabetical characters should be outputted unchanged and case must be preserved.
+
+        </details>
+      * <details><summary>Illustration:</summary>
+   
+         ```
+         $ ./caesar 1
+         plaintext:  HELLO
+         ciphertext: IFMMP
+         $ ./caesar HELLO
+         Usage: ./caesar key
+         ```
+         </details>
+   * [Substitution](/Week%202%20Arrays/substitution.c): Return a substitution cipher.
+      <details><summary>Constraints:</summary>
+   
+        1. Encrypt a message by replacing every letter with another letter using a 26-character mapping key.
+        2. Accept a single command-line argument, a 26-character mapping key. Return `Usage: ./substitution key` if not receive exactly one command-line argument from user. Return `Key must contain 26 characters.` if not receive exactly 26 characters.
+        3. Output `plaintext:` and then prompt the user for a string of plaintext (using `get_string`).
+        4. Output `ciphertext:` followed by the plaintext’s corresponding ciphertext, with each alphabetical character in the plaintext substituted for the corresponding character in the ciphertext.
+        5. Non-alphabetical characters should be outputted unchanged and case must be preserved.
+        
+      </details>
+      <details><summary>Illustration:</summary>
+   
+         ```
+         $ ./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
+         plaintext:  hello, world
+         cyphertext: jrssb, ybwsp
+         $ ./substitution
+         Usage: ./substitution key
+         $ ./substitution ABC
+         Key must contain 26 characters.
+         ```
+      </details>
 <br>
 
 <h2 id="week3">Week 3 Algorithms</h2>
