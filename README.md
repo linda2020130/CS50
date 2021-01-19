@@ -270,7 +270,12 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 <h2 id="week4">Week 4 Memory</h2>
 
 [🐳](/Week%204%20Memory)
-<br>
+1. [Pointers](/Week%204%20Memory/Pointers.md): Definition and examples of pointers including how to create one and how to use the dereference operator(`*`). Memory and size of each data type are also covered.
+2. [Dynamic Memory Allocation](/Week%204%20Memory/Dynamic_Memory_Allocation.md): Basic introduction of dynamically-allocated memory including concepts of `heap` and `stack`, and how to use `malloc()` and `free()`.
+3. [File Pointers](/Week%204%20Memory/File_Pointers.md): Definitions and examples of most common file I/O functions including `fopen()`, `fclose()`, `fgetc()`, `fputc()`, `fread()`, and `fwrite()`.
+4. **Problem Set 4**:
+   * [](): Return
+      <details><summary>Details:</summary>
 
 <h2 id="week5">Week 5 Data Structures</h2>
 
