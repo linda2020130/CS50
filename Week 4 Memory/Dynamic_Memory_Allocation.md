@@ -2,7 +2,7 @@
 
 * We can use pointers to get access to a block of **dynamically-allocated memory** at runtime.
 * Dynamically allocated memory comes from a pool of memory known as the **heap**.
-* Prior to this point, all memory we've been working with has been coming from a pool pf memory known as the **stack**.
+* Prior to this point, all memory we've been working with has been coming from a pool of memory known as the **stack**.
 
 <br />
 
