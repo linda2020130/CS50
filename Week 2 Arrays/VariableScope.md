@@ -2,7 +2,7 @@
 
 **Scope** is a characteristic of a variable that defines from *which functions that variable may be accessed*.
 * **Local variables** can only *be accessed **within** the functions* in which they are created.
-* **Global variables** can *be accessed by **any*** function* in the program.
+* **Global variables** can *be accessed by **any** function* in the program.
 
 <br />
 
