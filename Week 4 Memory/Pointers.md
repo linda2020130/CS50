@@ -22,7 +22,7 @@ int* pa, *pb, *pc;   // Need to keep typing * when creating pointers
 
 * The simplest pointer available in C is the **NULL** pointer (points to nothing).
   * You should **always** set the value of the pointer to NULL when creating a pointer without setting its value immediately.
-  * You can check whether a pointr is NULL using the equality operator (**==**).
+  * You can check whether a pointer is NULL using the equality operator (**==**).
 * Another way to create a pointer is to simply **extract** the address of an already existing variable by using address extraction operator (**&**).
 * An array's name is actually a pointer to its first element.
 
@@ -43,7 +43,7 @@ The main purpose of a pointer is to **allow us to modify or inspect the location
 
 #### Memory
 
-* Every file on your computer lives in your disk drive, be it a hard disk drive(HDD) or a solid-state drive(SSD).
+* Every file on your computer lives in your disk drive, a hard disk drive(HDD) or a solid-state drive(SSD).
 * Disk drives are just storage space; we cannot directly work there. Manipulation and use of data can only take place in **RAM**(Random Access Memory), so we have to move data there.
 * Memory is basically *a huge **array of byte-sized cells**(8-bit wide bytes)*.
   * Arrays not only are useful for storage of information but also for so-called **random access** by indicating which *index location* we want.
