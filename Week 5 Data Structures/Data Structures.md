@@ -33,7 +33,7 @@
 
 ### Tries
 
-* *Insertion is complex* - a lot of dynamic mempry allocation, but gets easier as you go
+* *Insertion is complex* - a lot of dynamic memory allocation, but gets easier as you go
 * ***Deletion is easy*** - just free a node
 * ***Lookup is fast*** - not quite as fast as an array, but almost
 * ***Already sorted*** - sorts as you build in almost all situations
