@@ -24,9 +24,9 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 
 [🐳](/Week%201%20C)
 1. [Using the Linux command line](/Week%201%20C/CommandLine.md): Common Linux CLI commands including `ls`, `cd`, `mkdir`, `cp`, `rm`, `mv` and how to compile the C languages source code into machine code.
-2. **Problem Set 1**: 
-    * [Hello](/Week%201%20C/hello.c): Return `hello, XXX` after user inputs the name.
-    * [Mario](/Week%201%20C/mario.c): Return the **pyramids** using hashes (`#`) for bricks after user inputs how tall the pyramids should be. 
+2. **Problem Set 1**:
+   * [Hello](/Week%201%20C/hello.c): Return `hello, XXX` after user inputs the name.
+   * [Mario](/Week%201%20C/mario.c): Return the **pyramids** using hashes (`#`) for bricks after user inputs how tall the pyramids should be.\
       <details><summary>Details:</summary>
       <p>If the user doesn’t input a positive integer between 1 and 8, inclusive, the program should re-prompt the user until they cooperate.</p>
       </details>
@@ -45,7 +45,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       ####  ####
       ```
       </details>
-    * [Cash](/Week%201%20C/cash.c): Return the **minimum number of coins** that the user's input (how much change he/she owned) can be made.
+   * [Cash](/Week%201%20C/cash.c): Return the **minimum number of coins** that the user's input (how much change he/she owned) can be made.
       <details><summary>Details:</summary>
    
       1. The only coins available are quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢).
@@ -63,7 +63,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       4
       ```
       </details>
-    * [Credit](/Week%201%20C/credit.c): Return `VISA`, `AMEX`, `MASTERCARD`, or `INVALID` after user inputs a credit card number.
+   * [Credit](/Week%201%20C/credit.c): Return `VISA`, `AMEX`, `MASTERCARD`, or `INVALID` after user inputs a credit card number.
       <details><summary>Details:</summary>
    
       1. The program should re-prompt the users until they input entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card). 
@@ -161,7 +161,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 1. [Algorithms](/Week%203%20Algorithms/Algorithms.md): Includes `Linear Search`, `Binary Search`, `Bubble Sort`, `Selection Sort`, `Insertion Sort`, and `Merge Sort`.
 2. [Recursion](/Week%203%20Algorithms/Recursion.md): Definition and examples of recursion.
 3. **Problem Set 3**: 
-    * [Plurality](/Week%203%20Algorithms/plurality.c): Run a plurity election. Every voter gets one vote, and the candidate with the most votes wins.
+   * [Plurality](/Week%203%20Algorithms/plurality.c): Run a plurity election. Every voter gets one vote, and the candidate with the most votes wins.
       <details><summary>Details:</summary>
       
       1. The maximum number of candidates an election can have is 9.
@@ -192,7 +192,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       Bob
       ```
       </details>
-    * [Runoff](/Week%203%20Algorithms/runoff.c): Run a runoff election, a ranked-choice voting system. Voters can rank the candidates in order of preference. 
+   * [Runoff](/Week%203%20Algorithms/runoff.c): Run a runoff election, a ranked-choice voting system. Voters can rank the candidates in order of preference. 
       <details><summary>Details:</summary>
    
       1. If no candidate has a majority of the votes, the last place candidate is eliminated, and anyone who voted for them will instead vote for their next preference. Once a candidate has a majority, that candidate is declared the winner.
@@ -230,7 +230,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       Alice
       ```
       </details>
-    * [Tideman](/Week%203%20Algorithms/tideman.c): Run a Tideman election, a ranked-choice voting system. Voters can rank the candidates in order of preference.
+   * [Tideman](/Week%203%20Algorithms/tideman.c): Run a Tideman election, a ranked-choice voting system. Voters can rank the candidates in order of preference.
       <details><summary>Details:</summary>
       
       1. The Tideman method works by constructing a “graph” of candidates, where an arrow (i.e. edge) from candidate A to candidate B indicates that candidate A wins against candidate B in a head-to-head matchup. The winner of the election should be the “source” of the graph
@@ -276,60 +276,60 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 3. [File Pointers](/Week%204%20Memory/File_Pointers.md): Definitions and examples of most common file I/O functions including `fopen()`, `fclose()`, `fgetc()`, `fputc()`, `fread()`, and `fwrite()`.
 4. **Problem Set 4**:
    * [Filter Less](/Week%204%20Memory/filter_less.c): Return a filtered(grayscale/sepia/reflect/blur) image of user's choice.
-     <details><summary>Details:</summary>
-   
-     1. Think of filtering an image as taking the pixels of some original image, and modifying each pixel in such a way that a particular effect is apparent in the resulting image.
-     2. The function `grayscale` should take an image and turn it into a black-and-white version of the same image.
-     3. The function `sepia` should take an image and turn it into a sepia version of the same image.
-     4. The `reflect` function should take an image and reflect it horizontally.
-     5. The `blur` function should take an image and turn it into a box-blurred version of the same image.
-     6. Prompt the users to input three command-line arguments(filtered function, input image, output image)
-     </details>
-     <details><summary>Illustration:</summary>
+      <details><summary>Details:</summary>
       
-     ```C
-     $ ./filter -g infile.bmp outfile.bmp
-     $ ./filter -s infile.bmp outfile.bmp
-     $ ./filter -r infile.bmp outfile.bmp
-     $ ./filter -b infile.bmp outfile.bmp
-     ```
-     </details>
+      1. Think of filtering an image as taking the pixels of some original image, and modifying each pixel in such a way that a particular effect is apparent in the resulting image.
+      2. The function `grayscale` should take an image and turn it into a black-and-white version of the same image.
+      3. The function `sepia` should take an image and turn it into a sepia version of the same image.
+      4. The `reflect` function should take an image and reflect it horizontally.
+      5. The `blur` function should take an image and turn it into a box-blurred version of the same image.
+      6. Prompt the users to input three command-line arguments(filtered function, input image, output image)
+      </details>
+      <details><summary>Illustration:</summary>
+      
+      ```C
+      $ ./filter -g infile.bmp outfile.bmp
+      $ ./filter -s infile.bmp outfile.bmp
+      $ ./filter -r infile.bmp outfile.bmp
+      $ ./filter -b infile.bmp outfile.bmp
+      ```
+      </details>
    * [Filter More](/Week%204%20Memory/filter_more.c): Return a filtered(grayscale/reflect/blur/edges) image of user's choice.
-     <details><summary>Details:</summary>
+      <details><summary>Details:</summary>
    
-     1. Think of filtering an image as taking the pixels of some original image, and modifying each pixel in such a way that a particular effect is apparent in the resulting image.
-     2. The function `grayscale` should take an image and turn it into a black-and-white version of the same image.
-     3. The `reflect` function should take an image and reflect it horizontally.
-     4. The `blur` function should take an image and turn it into a box-blurred version of the same image.
-     5. The `edges` function should take an image and highlight the edges between objects, according to the Sobel operator.
-     6. Prompt the users to input three command-line arguments(filtered function, input image, output image)
-     </details>
-     <details><summary>Illustration:</summary>
+      1. Think of filtering an image as taking the pixels of some original image, and modifying each pixel in such a way that a particular effect is apparent in the resulting image.
+      2. The function `grayscale` should take an image and turn it into a black-and-white version of the same image.
+      3. The `reflect` function should take an image and reflect it horizontally.
+      4. The `blur` function should take an image and turn it into a box-blurred version of the same image.
+      5. The `edges` function should take an image and highlight the edges between objects, according to the Sobel operator.
+      6. Prompt the users to input three command-line arguments(filtered function, input image, output image)
+      </details>
+      <details><summary>Illustration:</summary>
       
-     ```C
-     $ ./filter -g infile.bmp outfile.bmp
-     $ ./filter -r infile.bmp outfile.bmp
-     $ ./filter -b infile.bmp outfile.bmp
-     $ ./filter -e infile.bmp outfile.bmp
-     ```
-     </details>
+      ```C
+      $ ./filter -g infile.bmp outfile.bmp
+      $ ./filter -r infile.bmp outfile.bmp
+      $ ./filter -b infile.bmp outfile.bmp
+      $ ./filter -e infile.bmp outfile.bmp
+      ```
+      </details>
    * [Recover](/Week%204%20Memory/recover.c): Return recovered JPEGs from a forensic image.
-     <details><summary>Details:</summary>
+      <details><summary>Details:</summary>
    
-     1. Even though the camera insists that the card is now blank, we’re pretty sure that’s not quite true. 
-     2. JPEGs have “signatures,” patterns of bytes that can distinguish them from other file formats. The first three bytes of JPEGs are `0xff 0xd8 0xff`
-     3. Digital cameras tend to store photographs contiguously on memory cards, whereby each photo is stored immediately after the previously taken photo.
-     4. Accept exactly one command-line argument, the name of a forensic image from which to recover JPEGs. Return `Usage: ./recover image` if not getting exactly one command-line argument.
-     5. If the program uses `malloc()`, must not leak any memory.
-     </details>
-     <details><summary>Illustration:</summary>
+      1. Even though the camera insists that the card is now blank, we’re pretty sure that’s not quite true. 
+      2. JPEGs have “signatures,” patterns of bytes that can distinguish them from other file formats. The first three bytes of JPEGs are `0xff 0xd8 0xff`
+      3. Digital cameras tend to store photographs contiguously on memory cards, whereby each photo is stored immediately after the previously taken photo.
+      4. Accept exactly one command-line argument, the name of a forensic image from which to recover JPEGs. Return `Usage: ./recover image` if not getting exactly one command-line argument.
+      5. If the program uses `malloc()`, must not leak any memory.
+      </details>
+      <details><summary>Illustration:</summary>
       
-     ```C
-     $ ./recover
-     Usage: ./recover image
-     $ ./recover card.raw
-     ```
-     </details>
+      ```C
+      $ ./recover
+      Usage: ./recover image
+      $ ./recover card.raw
+      ```
+      </details>
 
 <h2 id="week5">Week 5 Data Structures</h2>
 
@@ -340,37 +340,37 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 4. [Data Structures](/Week%205%20Data%20Structures/Data%20Structures.md): Summary of data structures including `arrays`, `linked lists`, `hash tables`, and `tries`.
 5. **Problem Set 5**:
    * [Speller](/Week%205%20Data%20Structures/dictionary.c): Return a list of misspelled words and some statistics including number of `WORDS MISSPELLED`, `WORDS IN DICTIONARY`, `WORDS IN TEXT`, `TIME IN load`, `TIME IN check`, `TIME IN size`, `TIME IN unload`, and `TIME IN TOTAL`.
-     <details><summary>Details:</summary>
+      <details><summary>Details:</summary>
    
-     1. Ultimate enemy is time!
-     2. Only need to implement `load`, `hash`, `size`, `check`, and `unload` functions in `dictionary.c`.
-     3. Must not leak any memory. Be sure to check for leaks with `valgrind`.
-     4. `check` must be case-insensitive and you may assume that `check` will only be passed words that contain (uppercase or lowercase) alphabetical characters and possibly apostrophes.
-     5. May search for (good) hash functions online, so long as you cite the origin of any hash function you integrate into your own code.
-     </details>
-     <details><summary>Illustration:</summary>
+      1. Ultimate enemy is time!
+      2. Only need to implement `load`, `hash`, `size`, `check`, and `unload` functions in `dictionary.c`.
+      3. Must not leak any memory. Be sure to check for leaks with `valgrind`.
+      4. `check` must be case-insensitive and you may assume that `check` will only be passed words that contain (uppercase or lowercase) alphabetical characters and possibly apostrophes.
+      5. May search for (good) hash functions online, so long as you cite the origin of any hash function you integrate into your own code.
+      </details>
+      <details><summary>Illustration:</summary>
       
-     ```C
-     $ ./speller texts/lalaland.txt
-     MISSPELLED WORDS
+      ```C
+      $ ./speller texts/lalaland.txt
+      MISSPELLED WORDS
 
-     Chazelle
-     L
-     TECHNO
-     ...   // omit most of the rows
-     Sebastian's
-     L
+      Chazelle
+      L
+      TECHNO
+      // omitting middle rows...
+      Sebastian's
+      L
 
-     WORDS MISSPELLED:     955
-     WORDS IN DICTIONARY:  143091
-     WORDS IN TEXT:        17756
-     TIME IN load:         0.03
-     TIME IN check:        0.02
-     TIME IN size:         0.00
-     TIME IN unload:       0.01
-     TIME IN TOTAL:        0.06
-     ```
-     </details>
+      WORDS MISSPELLED:     955
+      WORDS IN DICTIONARY:  143091
+      WORDS IN TEXT:        17756
+      TIME IN load:         0.03
+      TIME IN check:        0.02
+      TIME IN size:         0.00
+      TIME IN unload:       0.01
+      TIME IN TOTAL:        0.06
+      ```
+      </details>
 
 <h2 id="week6">Week 6 Python</h2>
 
@@ -383,29 +383,63 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
    * [Credit](/Week%206%20Python/credit.py): Return `VISA`, `AMEX`, `MASTERCARD`, or `INVALID` after user inputs a credit card number. Redo the [Credit](/Week%201%20C/credit.c) program of [week 1](#week1) in `python`.
    * [Readability](/Week%206%20Python/readability.py): Return the approximate grade level after user input some text. Redo the [Readability](/Week%202%20Arrays/readability.c) program of [week 2](#week2) in `python`.
    * [DNA](/Week%206%20Python/dna.py): Return the identified person based on a given sequence of DNA.
-     <details><summary>Details:</summary>
-   
-     1. An STR is a short sequence of DNA bases that tends to repeat consecutively numerous times at specific locations inside of a person’s DNA.
-     2. Using multiple STRs can improve the accuracy of DNA profiling. So if two DNA samples match in the number of repeats for each of the STRs, the analyst can be pretty confident they came from the same person. 
-     3. Should require as its first command-line argument the name of a CSV file containing the STR counts for a list of individuals and should require as its second command-line argument the name of a text file containing the DNA sequence to identify. Return `Usage: python dna.py data.csv sequence.txt` until the users cooperate.
-     4. Should open the CSV file and the DNA sequence and read their contents into memory.
-     5. Return the name of the matching individual if the STR counts match exactly with any of the individuals in the CSV file, else return `No match`.
-     6. May assume that the STR counts will not match more than one individual.
-     </details>
-     <details><summary>Illustration:</summary>
+      <details><summary>Details:</summary>
       
-     ```Python
-     $ python dna.py
-     Usage: python dna.py data.csv sequence.txt
-     $ python dna.py databases/large.csv sequences/5.txt
-     Lavender
-     ```
-     </details>
+      1. An STR is a short sequence of DNA bases that tends to repeat consecutively numerous times at specific locations inside of a person’s DNA.
+      2. Using multiple STRs can improve the accuracy of DNA profiling. So if two DNA samples match in the number of repeats for each of the STRs, the analyst can be pretty confident they came from the same person. 
+      3. Should require as its first command-line argument the name of a CSV file containing the STR counts for a list of individuals and should require as its second command-line argument the name of a text file containing the DNA sequence to identify. Return `Usage: python dna.py data.csv sequence.txt` until the users cooperate.
+      4. Should open the CSV file and the DNA sequence and read their contents into memory.
+      5. Return the name of the matching individual if the STR counts match exactly with any of the individuals in the CSV file, else return `No match`.
+      6. May assume that the STR counts will not match more than one individual.
+      </details>
+      <details><summary>Illustration:</summary>
+
+      ```Python
+      $ python dna.py
+      Usage: python dna.py data.csv sequence.txt
+      $ python dna.py databases/large.csv sequences/5.txt
+      Lavender
+      ```
+      </details>
 
 <h2 id="week7">Week 7 SQL</h2>
 
 [🐍](/Week%207%20SQL)
-<br>
+1. [SQL](/Week%207%20SQL/SQL.md): Basic introduction and examples of SQL including primary four operations:`INSERT`, `SELECT`, `UPDATE`, `DELETE`.
+2. **Problem Set 7**:
+   * [Movie](/Week%207%20SQL/movie.sql): Use database movies to run sql commands that meets each question's requirements.
+   * [Houses](/Week%207%20SQL/houses): Import student data into a database by [import.py](/Week%207%20SQL/houses/import.py), and then produce class rosters by [roster.py](/Week%207%20SQL/houses/roster.py), that is, print out each student’s full name and birth year.
+      <details><summary>Details:</summary>
+      
+      * `import.py`:
+         1. Should accept the name of a CSV file as a command-line argument. Return an error until the users cooperate.
+         2. May assume that the CSV file will exist, and will have columns `name`, `house`, and `birth`.
+         3. For each student in the CSV file, insert the student into the `students` table in the `students.db` database.
+         4. May assume that each person’s name field will contain either two space-separated names (a first and last name) or three space-separated names (a first, middle, and last name). Leave their middle name field as NULL in the table if no middle name.
+      * `roster.py`:
+         1. Should accept the name of a house as a command-line argument. Return an error until the users cooperate.
+         2. Should query the `students` table in the `students.db` database for all of the students in the specified house.
+         3. Each student should be printed on their own line.
+         4. Students should be ordered by last name. For students with the same last name, they should be ordered by first name.
+      </details>
+      <details><summary>Illustration:</summary>
+
+      ```Python
+      $ python import.py characters.csv
+      $ python roster.py Gryffindor
+      Lavender Brown, born 1979
+      Colin Creevey, born 1981
+      Seamus Finnigan, born 1979
+      Hermione Jean Granger, born 1979
+      Neville Longbottom, born 1980
+      Parvati Patil, born 1979
+      Harry James Potter, born 1980
+      Dean Thomas, born 1980
+      Romilda Vane, born 1981
+      Ginevra Molly Weasley, born 1981
+      Ronald Bilius Weasley, born 1980
+      ```
+      </details>
 
 <h2 id="week8">Week 8 Information</h2>
 
