@@ -31,7 +31,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       </details>
       <details><summary>Illustration:</summary>
       
-      ```
+      ```C
       $ ./mario
       Height: -1
       Height: 0
@@ -54,7 +54,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       </details>
       <details><summary>Illustration:</summary>
       
-      ```
+      ```C
       $ ./cash
       Change owed: -0.41
       Change owed: foo
@@ -72,7 +72,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       </details>
       <details><summary>Illustration:</summary>
       
-      ```
+      ```C
       $ ./credit
       Number: 4003-6000-0000-0014
       Number: foo
@@ -101,7 +101,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       </details>
       <details><summary>Illustration:</summary>
    
-      ```
+      ```C
       $ ./readability
       Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard.
       Grade 5
@@ -123,7 +123,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       </details>
       <details><summary>Illustration:</summary>
    
-      ```
+      ```C
       $ ./caesar 1
       plaintext:  HELLO
       ciphertext: IFMMP
@@ -143,7 +143,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       </details>
       <details><summary>Illustration:</summary>
    
-      ```
+      ```C
       $ ./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
       plaintext:  hello, world
       cyphertext: jrssb, ybwsp
@@ -172,7 +172,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       </details>
       <details><summary>Illustration:</summary>
       
-      ```
+      ```C
       $ ./plurality Alice Bob
       Number of voters: 3
       Vote: Alice
@@ -203,7 +203,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       </details>
       <details><summary>Illustration:</summary>
       
-      ```
+      ```C
       ./runoff Alice Bob Charlie
       Number of voters: 5
       Rank 1: Alice
@@ -240,7 +240,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       </details>
       <details><summary>Illustration:</summary>
       
-      ```
+      ```C
       ./tideman Alice Bob Charlie
       Number of voters: 5
       Rank 1: Alice
@@ -286,7 +286,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
      </details>
      <details><summary>Illustration:</summary>
       
-     ```
+     ```C
      $ ./filter -g infile.bmp outfile.bmp
      $ ./filter -s infile.bmp outfile.bmp
      $ ./filter -r infile.bmp outfile.bmp
@@ -305,7 +305,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
      </details>
      <details><summary>Illustration:</summary>
       
-     ```
+     ```C
      $ ./filter -g infile.bmp outfile.bmp
      $ ./filter -r infile.bmp outfile.bmp
      $ ./filter -b infile.bmp outfile.bmp
@@ -323,7 +323,7 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
      </details>
      <details><summary>Illustration:</summary>
       
-     ```
+     ```C
      $ ./recover
      Usage: ./recover image
      $ ./recover card.raw
@@ -333,7 +333,43 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 <h2 id="week5">Week 5 Data Structures</h2>
 
 [🐳](/Week%205%20Data%20Structures)
-<br>
+1. [Linked Lists](/Week%205%20Data%20Structures/Linked_Lists.md): Definition, features, and example of linked lists.
+2. [Hash Tables](/Week%205%20Data%20Structures/Linked_Lists.md): Definition, features, and example of hash tables and hash functions. Solutions to collisions are also covered.
+3. [Tries](/Week%205%20Data%20Structures/Tries.md): Definition, features, and example of tries.
+4. [Data Structures](/Week%205%20Data%20Structures/Data%20Structures.md): Summary of data structures including `arrays`, `linked lists`, `hash tables`, and `tries`.
+5. **Problem Set 5**:
+   * [Speller](/Week%205%20Data%20Structures/dictionary.c): Return a list of misspelled words and some statistics including number of `WORDS MISSPELLED`, `WORDS IN DICTIONARY`, `WORDS IN TEXT`, `TIME IN load`, `TIME IN check`, `TIME IN size`, `TIME IN unload`, and `TIME IN TOTAL`.
+     <details><summary>Details:</summary>
+   
+     1. Ultimate enemy is time!
+     2. Only need to implement `load`, `hash`, `size`, `check`, and `unload` functions in `dictionary.c`.
+     3. Must not leak any memory. Be sure to check for leaks with `valgrind`.
+     4. `check` must be case-insensitive and you may assume that `check` will only be passed words that contain (uppercase or lowercase) alphabetical characters and possibly apostrophes.
+     5. May search for (good) hash functions online, so long as you cite the origin of any hash function you integrate into your own code.
+     </details>
+     <details><summary>Illustration:</summary>
+      
+     ```C
+     $ ./speller texts/lalaland.txt
+     MISSPELLED WORDS
+
+     Chazelle
+     L
+     TECHNO
+     ...   // omit most of the rows
+     Sebastian's
+     L
+
+     WORDS MISSPELLED:     955
+     WORDS IN DICTIONARY:  143091
+     WORDS IN TEXT:        17756
+     TIME IN load:         0.03
+     TIME IN check:        0.02
+     TIME IN size:         0.00
+     TIME IN unload:       0.01
+     TIME IN TOTAL:        0.06
+     ```
+     </details>
 
 <h2 id="week6">Week 6 Python</h2>
 
