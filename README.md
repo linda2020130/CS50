@@ -274,8 +274,61 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 2. [Dynamic Memory Allocation](/Week%204%20Memory/Dynamic_Memory_Allocation.md): Basic introduction of dynamically-allocated memory including concepts of `heap` and `stack`, and how to use `malloc()` and `free()`.
 3. [File Pointers](/Week%204%20Memory/File_Pointers.md): Definitions and examples of most common file I/O functions including `fopen()`, `fclose()`, `fgetc()`, `fputc()`, `fread()`, and `fwrite()`.
 4. **Problem Set 4**:
-   * [](): Return
-      <details><summary>Details:</summary>
+   * [Filter Less](/Week%204%20Memory/filter_less.c): Return a filtered(grayscale/sepia/reflect/blur) image of user's choice.
+     <details><summary>Details:</summary>
+   
+     1. Think of filtering an image as taking the pixels of some original image, and modifying each pixel in such a way that a particular effect is apparent in the resulting image.
+     2. The function `grayscale` should take an image and turn it into a black-and-white version of the same image.
+     3. The function `sepia` should take an image and turn it into a sepia version of the same image.
+     4. The `reflect` function should take an image and reflect it horizontally.
+     5. The `blur` function should take an image and turn it into a box-blurred version of the same image.
+     6. Prompt the users to input three command-line arguments(filtered function, input image, output image)
+     </details>
+     <details><summary>Illustration:</summary>
+      
+     ```
+     $ ./filter -g infile.bmp outfile.bmp
+     $ ./filter -s infile.bmp outfile.bmp
+     $ ./filter -r infile.bmp outfile.bmp
+     $ ./filter -b infile.bmp outfile.bmp
+     ```
+     </details>
+   * [Filter More](/Week%204%20Memory/filter_more.c): Return a filtered(grayscale/reflect/blur/edges) image of user's choice.
+     <details><summary>Details:</summary>
+   
+     1. Think of filtering an image as taking the pixels of some original image, and modifying each pixel in such a way that a particular effect is apparent in the resulting image.
+     2. The function `grayscale` should take an image and turn it into a black-and-white version of the same image.
+     3. The `reflect` function should take an image and reflect it horizontally.
+     4. The `blur` function should take an image and turn it into a box-blurred version of the same image.
+     5. The `edges` function should take an image and highlight the edges between objects, according to the Sobel operator.
+     6. Prompt the users to input three command-line arguments(filtered function, input image, output image)
+     </details>
+     <details><summary>Illustration:</summary>
+      
+     ```
+     $ ./filter -g infile.bmp outfile.bmp
+     $ ./filter -r infile.bmp outfile.bmp
+     $ ./filter -b infile.bmp outfile.bmp
+     $ ./filter -e infile.bmp outfile.bmp
+     ```
+     </details>
+   * [Recover](/Week%204%20Memory/recover.c): Return recovered JPEGs from a forensic image.
+     <details><summary>Details:</summary>
+   
+     1. Even though the camera insists that the card is now blank, we’re pretty sure that’s not quite true. 
+     2. JPEGs have “signatures,” patterns of bytes that can distinguish them from other file formats. The first three bytes of JPEGs are `0xff 0xd8 0xff`
+     3. Digital cameras tend to store photographs contiguously on memory cards, whereby each photo is stored immediately after the previously taken photo.
+     4. Accept exactly one command-line argument, the name of a forensic image from which to recover JPEGs. Return `Usage: ./recover image` if not getting exactly one command-line argument.
+     5. If the program uses `malloc()`, must not leak any memory.
+     </details>
+     <details><summary>Illustration:</summary>
+      
+     ```
+     $ ./recover
+     Usage: ./recover image
+     $ ./recover card.raw
+     ```
+     </details>
 
 <h2 id="week5">Week 5 Data Structures</h2>
 
