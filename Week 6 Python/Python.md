@@ -7,7 +7,7 @@
 
 #### To declare a list
 
-```
+```python
 nums = []
 nums = [1, 2, 3, 4]
 nums = [x for x in range(10)]
@@ -16,7 +16,7 @@ nums = list()
 
 #### To tack on to an existing list
 
-```
+```python
 nums = [1, 2, 3, 4]
 
 # Add element 5 to the last of nums
@@ -33,7 +33,7 @@ nums[len(nums):] = [5]   # replace list of 5 to position 4 to last
 * They are great for associating collections of data, sort of like a struct in C, but where those values are unlikely to change.
 
 #### A list of tuples
-```
+```python
 presidents = [
     ("George Washington", 1789),
     ("John Adams", 1797),
@@ -54,7 +54,7 @@ for prez, year in presidents:
 * But this creates a somewhat new problem... how do we iterate through a dictionary? We don't have indexes ranging from [0, n-1] anymore.
 
 #### Examples
-```
+```python
 pizzas = {
     "cheese": 9,
     "pepperoni": 10,
@@ -81,7 +81,7 @@ for pie, price in pizzas.items():
 * All functions are introduced with the `def` keyword
   * Also, no need for main; the interpreter reads from top to bottom!
   * If you wish to define main nonetheless (and you might want to!), you must at the very end of your code have:
-```
+```python
 if __name__ == "__main__":
     main()
 ```
@@ -101,7 +101,7 @@ if __name__ == "__main__":
 * In defining each method of an object, `self` should be its first parameter, which stipulates on what object the method is called.
 
 #### Example
-```
+```python
 class Student():
 
     def __init__(self, name, id):
@@ -130,6 +130,6 @@ jane.print()
 
 ### Run file
 
-* To run your Python program through the Python interpreter at the command-line, simply type ` python <file>`
+* To run your Python program through the Python interpreter at the command-line, simply type `python <file>`
 * Your program will run through the interpreter, which will execute everything inside of the file, top to bottom.
 
