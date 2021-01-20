@@ -1,7 +1,8 @@
 # CS50
 Notes and problem sets for Harvard CS50.<br>
-Online course website: [CS50](https://cs50.harvard.edu/x/2020/)(2020 version)
-<br><br>
+Online course website: [CS50](https://cs50.harvard.edu/x/2020/)(2020 version)<br>
+Coding in `C` from week 1 to 5 and in `Python` from week 6 to 8.<br>
+<br>
 
 ## Table of Contents
 * [Introduction](#intro)
@@ -374,7 +375,32 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 <h2 id="week6">Week 6 Python</h2>
 
 [🐍](/Week%206%20Python)
-<br>
+1. [Python](/Week%206%20Python/Python.md): Data structures and concepts of Python including ` list`, `tuple`, `dictionary`, `function`, `object`, and coding style and how to run a python file.
+2. **Problem Set 6**:
+   * [Hello](/Week%206%20Python/hello.py): Return `hello, XXX` after user inputs the name. Redo the [Hello](/Week%201%20C/hello.c) program of [week 1](#week1) in `python`.
+   * [Mario](/Week%206%20Python/mario_more.py): Return the **pyramids** using hashes (`#`) for bricks after user inputs how tall the pyramids should be. Redo the [Mario](/Week%201%20C/mario.c) program of [week 1](#week1) in `python`.
+   * [Cash](/Week%206%20Python/cash.py): Return the **minimum number of coins** that the user's input (how much change he/she owned) can be made. Redo the [Cash](/Week%201%20C/cash.c) program of [week 1](#week1) in `python`.
+   * [Credit](/Week%206%20Python/credit.py): Return `VISA`, `AMEX`, `MASTERCARD`, or `INVALID` after user inputs a credit card number. Redo the [Credit](/Week%201%20C/credit.c) program of [week 1](#week1) in `python`.
+   * [Readability](/Week%206%20Python/readability.py): Return the approximate grade level after user input some text. Redo the [Readability](/Week%202%20Arrays/readability.c) program of [week 2](#week2) in `python`.
+   * [DNA](/Week%206%20Python/dna.py): Return the identified person based on a given sequence of DNA.
+     <details><summary>Details:</summary>
+   
+     1. An STR is a short sequence of DNA bases that tends to repeat consecutively numerous times at specific locations inside of a person’s DNA.
+     2. Using multiple STRs can improve the accuracy of DNA profiling. So if two DNA samples match in the number of repeats for each of the STRs, the analyst can be pretty confident they came from the same person. 
+     3. Should require as its first command-line argument the name of a CSV file containing the STR counts for a list of individuals and should require as its second command-line argument the name of a text file containing the DNA sequence to identify. Return `Usage: python dna.py data.csv sequence.txt` until the users cooperate.
+     4. Should open the CSV file and the DNA sequence and read their contents into memory.
+     5. Return the name of the matching individual if the STR counts match exactly with any of the individuals in the CSV file, else return `No match`.
+     6. May assume that the STR counts will not match more than one individual.
+     </details>
+     <details><summary>Illustration:</summary>
+      
+     ```Python
+     $ python dna.py
+     Usage: python dna.py data.csv sequence.txt
+     $ python dna.py databases/large.csv sequences/5.txt
+     Lavender
+     ```
+     </details>
 
 <h2 id="week7">Week 7 SQL</h2>
 
