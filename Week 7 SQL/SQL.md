@@ -84,7 +84,7 @@
 #### INSERT
 
 * Add information to a table.
-```
+```sql
 INSERT INTO
 <table>
 (<columns>)
@@ -93,7 +93,7 @@ VALUES
 ```
 
 e.g.
-```
+```sql
 INSERT INTO
 users
 (username, password, fullname)
@@ -111,7 +111,7 @@ VALUES
 #### SELECT
 
 * Extract information from a table.
-```
+```sql
 SELECT
 <columns>
 FROM
@@ -123,7 +123,7 @@ ORDER BY
 ```
 
 e.g.
-```
+```sql
 SELECT
 idnum, fullname
 FROM
@@ -133,7 +133,7 @@ idnum < 12
 ```
 
 * Extract information from two tables
-```
+```sql
 SELECT
 <columns>
 FROM
@@ -145,7 +145,7 @@ ON
 ```
 
 e.g.
-```
+```sql
 SELECT
 users.fullname, moms.mother
 FROM
@@ -159,7 +159,7 @@ users.username = moms.username
 #### UPDATE
 
 * Mondify information in a table.
-```
+```sql
 UPDATE
 <table>
 SET
@@ -169,7 +169,7 @@ WHERE
 ```
 
 e.g.
-```
+```sql
 UPDATE
 users
 SET
@@ -179,7 +179,7 @@ idnum = 10
 ```
 
 e.g.
-```
+```sql
 UPDATE
 favorites
 SET
@@ -191,7 +191,7 @@ title LIKE '%office'
 #### DELETE
 
 * Remove information from a table
-```
+```sql
 DELETE FROM
 <table>
 WHERE
@@ -199,7 +199,7 @@ WHERE
 ```
 
 e.g.
-```
+```sql
 DELETE FROM
 users
 WHERE
