@@ -13,7 +13,7 @@ Coding in `C` from week 1 to 5 and in `Python` from week 6 to 8.<br>
 * [Week 5 Data Structures](#week5)
 * [Week 6 Python 🐍](#week6)
 * [Week 7 SQL](#week7)
-* [Week 8 Information](#week8)
+* [Week 8 Web](#week8)
 
 <h2 id="intro">Introduction</h2>
 
@@ -441,7 +441,28 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
       ```
       </details>
 
-<h2 id="week8">Week 8 Information</h2>
+<h2 id="week8">Week 8 Web</h2>
 
-[🐍](/Week%208%20Information)
-<br>
+[🐍](/Week%208%20Web)
+1. [Finance](/Week%208%20Web/finance): C$50 Finance, a web app via which you can manage portfolios of stocks.
+    * **Functions**:
+        * Register: Allow the user to type in `username`, `password`, and `confirm password`. Return apology page if the user doesn't cooperate. Check if the username is valid by asynchronous request(AJAX).
+        
+        <img src="https://github.com/linda2020130/CS50/blob/master/Pictures/Web/register.JPG" height="50%" width="50%">
+        
+        * Register:
+        * Log In:
+        * Log Out:
+        * Change Password:
+        * Summary:
+        * Quote:
+        * Quoted:
+        * Buy:
+        * Sell:
+        * History:
+2. [Homepage](/Week%208%20Web/homepage): 
+
+
+
+
+
