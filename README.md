@@ -445,18 +445,17 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 
 [🐍](/Week%208%20Web)
 1. [Finance](/Week%208%20Web/finance): C$50 Finance, a web app via which you can manage portfolios of stocks.
-    * **Functions**:
-        * [Register](/Week%208%20Web/finance/templates/register.html): Allow the user to type in `username`, `password`, and `confirm password`. Redirect to apology page if the user doesn't cooperate. Check if the username is valid by asynchronous request(AJAX).<br>
+    * [Register](/Week%208%20Web/finance/templates/register.html): Allow the user to type in `username`, `password`, and `confirm password`. Redirect to apology page if the user doesn't cooperate. Check if the username is valid by *asynchronous request(AJAX)*.<br>
         
-          ![register](/Pictures/Web/register.gif)
-        * [Log In](/Week%208%20Web/finance/templates/login.html):
-        * **Log Out**: Clear the login session.<br>
-        * [Change Password](/Week%208%20Web/finance/templates/changepwd.html):
-        * [Summary](/Week%208%20Web/finance/templates/index.html):
-        * [Quote](/Week%208%20Web/finance/templates/quote.html):
-        * [Buy](/Week%208%20Web/finance/templates/buy.html):
-        * [Sell](/Week%208%20Web/finance/templates/sell.html):
-        * [History](/Week%208%20Web/finance/templates/register.html):
+       ![register](/Pictures/Web/register.gif)
+    * [Log In](/Week%208%20Web/finance/templates/login.html):
+    * **Log Out**: Clear the login session.<br>
+    * [Change Password](/Week%208%20Web/finance/templates/changepwd.html):
+    * [Summary](/Week%208%20Web/finance/templates/index.html):
+    * [Quote](/Week%208%20Web/finance/templates/quote.html):
+    * [Buy](/Week%208%20Web/finance/templates/buy.html):
+    * [Sell](/Week%208%20Web/finance/templates/sell.html):
+    * [History](/Week%208%20Web/finance/templates/register.html):
 2. [Homepage](/Week%208%20Web/homepage): 
 
 
