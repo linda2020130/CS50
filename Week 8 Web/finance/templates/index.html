@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <form action="/index" method="get">
+        <h2>{{ username }}'s Finance Summary</h2><br>
+        <div class="form-group">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>No. of Shares</th>
+                        <th>Ave. Purchase Price</th>
+                        <th>Current Price</th>
+                        <th>Unit Price Diff.</th>
+                        <th>Total Value</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in table %}
+                        <tr>
+                            <td><a class="link" href="/history?symbol={{ row["symbol"] }}">{{ row["symbol"] }}</a></td>
+                            <td>{{ row["shares"] }}</td>
+                            <td>{{ row["avePrice"] }}</td>
+                            <td>{{ row["price"] }}</td>
+                            <td class={{ row["color"] }}>{{ row["diff"] }}</td>
+                            <td>{{ row["values"] }}</td>
+                            <td><a class="button greenButton" href="/buy?symbol={{ row["symbol"] }}">Buy</a>
+                                <a class="button redButton" href="/sell?symbol={{ row["symbol"] }}">Sell</a></td>
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                        <td>Cash</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>{{ cash }}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Grand Total</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>{{ total }}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+{% endblock %}

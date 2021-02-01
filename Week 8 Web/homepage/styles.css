@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+#topnav {
+  list-style-type: none;
+  margin: 0 0 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+#topnav li a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#topnav li a:hover:not(.active) {
+  color: black;
+  background-color: gold;
+  padding: 15px;
+}
+
+#topnav li .active {
+  color: white;
+  background-color: maroon;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    #topnav {
+      position: relative;
+    }
+    #topnav li a {
+      float: none;
+    }
+}
+
+.homepho {
+  float: left;
+  width: 75%;
+}
+
+.homepho .element{
+  width: 100%;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.pagepho {
+  max-width: 900px;
+  width: 80%;
+}
+
+#homediv {
+  float: right;
+  width: 25%;
+}
+
+@media screen and (max-width: 880px) {
+    .homepho {
+      width: 100%;
+    }
+    #homediv {
+      width: 100%;
+    }
+}
+
+.round_img {
+  border-radius: 50%;
+  width: 150px;
+  height: 165px;
+}
+
+.center_img {
+  display: block;
+  margin: 25px auto 20px auto;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.style_text {
+  font-size: 18px;
+}
+
+.indent_text {
+  text-indent: 2em;
+}
+
+.margin_space {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.maroon_text {
+  color: maroon;
+}

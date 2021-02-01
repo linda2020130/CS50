@@ -1,0 +1,105 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+.red
+{
+    color: red;
+}
+
+.green
+{
+    color: green;
+}
+
+.link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover
+{
+    text-decoration: none;
+}
+
+.button
+{
+    border-radius: 10px;
+    border: none;
+    padding: 2px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px 3px;
+}
+
+.greenButton
+{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.greenButton:hover
+{
+    background-color: #46a049;
+    color: white;
+    text-decoration: none;
+}
+
+.redButton
+{
+    background-color: #f44336;
+    color: white;
+}
+
+.redButton:hover
+{
+    background-color: #f21c0d;
+    color: white;
+    text-decoration: none;
+}
