@@ -445,9 +445,13 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 
 [🐍](/Week%208%20Web)
 1. [Finance](/Week%208%20Web/finance): C$50 Finance, a web app via which you can manage portfolios of stocks.
-    * [Register](/Week%208%20Web/finance/templates/register.html): Allow the user to type in `username`, `password`, and `confirm password`. Redirect to apology page if the user doesn't cooperate. Check if the username is valid by *asynchronous request(AJAX)*.<br>
+    * [Register](/Week%208%20Web/finance/templates/register.html): 
+        * Allow the user to type in `username`, `password`, and `confirm password`. 
+        * Redirect to apology page if the user clicks the `Register` button with following situations: any of the columns is blank; password doesn't match confirm password; username has already existed. 
+        * Check if username is valid by *asynchronous request(AJAX)*.
+        * Flash `Registeration Success!` if the user has registered successfully.<br>
         
-       ![register](/Pictures/Web/register.gif)
+        ![register](/Pictures/Web/register.gif)
     * [Log In](/Week%208%20Web/finance/templates/login.html):
     * **Log Out**: Clear the login session.<br>
     * [Change Password](/Week%208%20Web/finance/templates/changepwd.html):
