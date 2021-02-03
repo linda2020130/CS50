@@ -449,17 +449,72 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
         * Allow the user to type in `username`, `password`, and `confirm password`. 
         * Redirect to apology page if the user clicks the `Register` button with following situations: any of the columns is blank; password doesn't match confirm password; username has already existed. 
         * Check if username is valid by *asynchronous request(AJAX)*.
-        * Flash `Registeration Success!` if the user has registered successfully.<br>
+        * Flash `Registeration Success!` if the user has registered successfully.
+        <br>
         
-        ![register](/Pictures/Web/register.gif)
+        ![Register](/Pictures/Web/register.gif)
     * [Log In](/Week%208%20Web/finance/templates/login.html):
-    * **Log Out**: Clear the login session.<br>
+        * Allow the user to type in `username` and `password`.
+        * Redirect to apology page if the user clicks the `Log In` button with following situations: any of the columns is blank; invalid username and/or password.
+        * Flash `Log In Success!` if the user has logged in successfully.
+        <br>
+        
+        ![Login](/Pictures/Web/login.gif)
+    * **Log Out**: 
+        * Clear the login session.
+        <br>
+        
+        ![Logout](/Pictures/Web/logout.gif)
     * [Change Password](/Week%208%20Web/finance/templates/changepwd.html):
+        * Allow the user to type in `original password`, `new password`, and `confirm password`.
+        * Redirect to apology page if the user clicks the `Change` button with following situations: any of the columns is blank; original password is not correct; new password equals to original password; new password and confirm password do not match.
+        * Flash `Password Change Success!` if the user has changed password successfully.
+        <br>
+        
+        ![Change Password](/Pictures/Web/changepwd.gif)
     * [Summary](/Week%208%20Web/finance/templates/index.html):
+        * Allow the user to view his current shareholding with symbol, number of shares, average purchase price, current price, unit price difference, total stock value, remaining cash, and grand total.
+        * Mark the unit price difference as green if current price is larger than average purchase price; mark as red if reverse.
+        * Allow the user to link to buy and sell page for each of his shareholding.
+        * Allow the user to link to history page for each of his shareholding.
+        <br>
+        
+        ![Summary](/Pictures/Web/summary.gif)
     * [Quote](/Week%208%20Web/finance/templates/quote.html):
+        * Allow the user to type in stock symbol to get quote.
+        * Redirect to apology page if the user clicks the `Quote` button without valid stock symbol.
+        * Return quoted page with stock symbol, company name, and current price from IEX if the user provides valid stock symbol.
+        <br>
+        
+        ![Quote](/Pictures/Web/quote.gif)
     * [Buy](/Week%208%20Web/finance/templates/buy.html):
+        * Allow the user to type in stock symbol and number of shares to buy in.
+        * Redirect to apology page if the user clicks the `Buy` button with following situations: any of the columns is blank; invalid stock symbol; number of shares is not a positive integer; not enough cash to buy in.
+        * Flash `Transaction Success!` and return to summary page if the user has bought the desired number of shares and stock symbol successfully.
+        * Allow the user to link to buy page via quoted page.
+        * Allow the user to link to buy page via summary page if the user would like to buy in one of his current shareholding.
+        * Autofill in the stock symbol if the user is from `Buy` button in quoted page or summary page.
+        <br>
+        
+        ![Buy](/Pictures/Web/buy.gif)
     * [Sell](/Week%208%20Web/finance/templates/sell.html):
+        * Allow the user to select one of his current shareholding and type in the number of shares to sell.
+        * Redirect to apology page if the user clicks the `Sell` button with following situations: any of the columns is blank; number of shares is not a positive integer; not enough number of shares to sell out.
+        * Flash `Transaction Success!` and return to summary page if the user has sold the desired number of shares and stock symbol successfully.
+        * Allow the user to link to sell page via summary page.
+        * Autofill in the stock symbol if the user is from `Sell` button in summary page.
+        <br>
+        
+        ![Sell](/Pictures/Web/sell.gif)
     * [History](/Week%208%20Web/finance/templates/register.html):
+        * Allow the user to view all transaction history.
+        * Allow the user to view each shareholding's transaction history by linking to history page via each stock symbol's link in summary page.
+        <br>
+        
+        ![History](/Pictures/Web/history.gif)
+        <br>
+        <br>
+        
 2. [Homepage](/Week%208%20Web/homepage): 
 
 
