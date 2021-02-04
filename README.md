@@ -444,7 +444,10 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 <h2 id="week8">Week 8 Web</h2>
 
 [🐍](/Week%208%20Web)
-1. [Finance](/Week%208%20Web/finance): C$50 Finance, a web app via which you can manage portfolios of stocks.
+### [Finance](/Week%208%20Web/finance)
+C$50 Finance, a web app via which you can manage portfolios of stocks.
+* **Tech**: HTML, CSS, JavaScript, Ajax, Python, Flask, SQLite
+* **Functions**:
     * [Register](/Week%208%20Web/finance/templates/register.html): 
         * Allow the user to type in `username`, `password`, and `confirm password`. 
         * Redirect to apology page if the user clicks the `Register` button with following situations: any of the columns is blank; password doesn't match confirm password; username has already existed. 
@@ -513,9 +516,14 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
         
         ![History](/Pictures/Web/history.gif)
         <br>
-        <br>
         
-2. [Homepage](/Week%208%20Web/homepage): 
+* **How to run?**:
+    1. Register for an API key to be able to query IEX's data (it should begin with `pk_`).
+    2. Execute `export API_KEY=value` in a terminal window where `value` is the API key value.
+    3. Execute `flask run` to start the web app.
+    <br>
+        
+### [Homepage](/Week%208%20Web/homepage): 
 
 
 
