@@ -14,6 +14,8 @@ Coding in `C` from week 1 to 5 and in `Python` from week 6 to 8.<br>
 * [Week 6 Python 🐍](#week6)
 * [Week 7 SQL](#week7)
 * [Week 8 Web](#week8)
+    * [Finance 🤑](#finance)
+    * [Homepage 🐰](#homepage)
 
 <h2 id="intro">Introduction</h2>
 
@@ -444,7 +446,11 @@ CS50 teaches students how to **think algorithmically** and **solve problems effi
 <h2 id="week8">Week 8 Web</h2>
 
 [🐍](/Week%208%20Web)
-### [Finance](/Week%208%20Web/finance)
+
+<h3 id="finance">Finance</h3>
+
+[🤑](/Week%208%20Web/finance)
+
 C$50 Finance, a web app via which you can manage portfolios of stocks.
 * **Tech**: HTML, CSS, JavaScript, Ajax, Python, Flask, SQLite
 * **Functions**:
@@ -523,7 +529,10 @@ C$50 Finance, a web app via which you can manage portfolios of stocks.
     3. Execute `flask run` to start the web app.
     <br>
         
-### [Homepage](/Week%208%20Web/homepage): 
+<h3 id="homepage">Homepage</h3>
+
+[🐰](/Week%208%20Web/homepage)
+
 Homepage is my online resume website where you can find contact information, education and experience, and my project.
 * **Tech**: HTML, CSS, JavaScript, Bootstrap
 * **Features**:
