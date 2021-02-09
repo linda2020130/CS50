@@ -536,29 +536,19 @@ C$50 Finance, a web app via which you can manage portfolios of stocks.
 Homepage is my online resume website where you can find contact information, education and experience, and my project.
 * **Tech**: HTML, CSS, JavaScript, Bootstrap
 * **Features**:
-    1. [Home](/Week%208%20Web/homepage/index.html):
-        * Responsive Web Design(RWD)
-        * A responsive navigation bar
-        * Links of github, LinkedIn, and email
-        * Resume download button
+    * Responsive Web Design(RWD)
+    * A responsive navigation bar
+* **Illustration**:
+    * [Home](/Week%208%20Web/homepage/index.html): Links of github, LinkedIn, and email; Resume download button.
         
         ![Home](/Pictures/Web/home.gif)
-    2. [About](/Week%208%20Web/homepage/about.html):
-        * Responsive Web Design(RWD)
-        * A responsive navigation bar
-        * Three word to describe myself
+    * [About](/Week%208%20Web/homepage/about.html): Three word to describe myself.
         
         ![About](/Pictures/Web/about.gif)
-    3. [Experience](/Week%208%20Web/homepage/experience.html):
-        * Responsive Web Design(RWD)
-        * A responsive navigation bar
-        * Education and work experience
+    3. [Experience](/Week%208%20Web/homepage/experience.html): Education and work experience.
         
         ![Experience](/Pictures/Web/experience.gif)
-    4. [Project](/Week%208%20Web/homepage/project.html):
-        * Responsive Web Design(RWD)
-        * A responsive navigation bar
-        * Side projects I have done so far
+    4. [Project](/Week%208%20Web/homepage/project.html): Side projects I have done so far.
         
         ![Project](/Pictures/Web/project.gif)
 * **How to run?**:
